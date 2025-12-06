@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Permitir JS pero sin análisis pesado
+    "allowJs": true,
+    "checkJs": false,
+
+    // Configuración para Bun / ESM moderno
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    // Evitar trabajo innecesario
+    "strict": false,
+    "skipLibCheck": true
+  },
+
+  "exclude": ["node_modules", "**/node_modules/*", "dist", "build"]
+}
